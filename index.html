@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi Raj | Generative AI Data Scientist & Full Stack GenAI Developer</title>
+  <meta name="description" content="Portfolio of Rishi Raj - Generative AI Data Scientist, Full Stack GenAI Developer, and RAG & LLM Systems Builder.">
+  <meta name="keywords" content="Generative AI, Data Scientist, Full Stack AI Developer, LLM Engineer, RAG, Python, Node.js, Google Gemini, Machine Learning">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+        <span class="logo-text">Rishi<span class="gradient-text">.AI</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="resume.html" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span> Available for GenAI Roles & High-Impact Freelance Projects
+          </div>
+          
+          <h1 class="hero-name">Rishi Raj</h1>
+          
+          <h2 class="hero-title">
+            <span class="static-prefix">I am a </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-tagline">
+            I build intelligent AI products that solve real-world problems. Whether it's training LLMs, designing smart RAG systems, or just writing clean code, I love turning complex algorithms into simple, beautiful web apps.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Hire Me
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/chalescharli" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rishiraj1131/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:Rishiraj1131@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-glow-ring"></div>
+          <div class="image-card glass-card">
+            <img src="profile_work.jpg" alt="Rishi Raj - Generative AI Data Scientist" class="hero-profile-img">
+            <div class="floating-badge badge-1">
+              <i class="fa-solid fa-microchip"></i>
+              <div>
+                <strong>Google Gemini 1.5</strong>
+                <span>RAG Systems</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-solid fa-certificate"></i>
+              <div>
+                <strong>Oracle Certified</strong>
+                <span>GenAI & LLM Professional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK MARQUEE -->
+    <section class="marquee-section">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- Double items for seamless infinite scroll -->
+          <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="tech-item"><i class="fa-solid fa-brain"></i> Google Gemini</div>
+          <div class="tech-item"><i class="fa-solid fa-diagram-project"></i> LangChain</div>
+          <div class="tech-item"><i class="fa-solid fa-robot"></i> RAG Systems</div>
+          <div class="tech-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+          <div class="tech-item"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+          <div class="tech-item"><i class="fa-solid fa-database"></i> Vector DBs</div>
+          <div class="tech-item"><i class="fa-brands fa-react"></i> React / UI</div>
+          
+          <!-- Duplicate for seamless looping -->
+          <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="tech-item"><i class="fa-solid fa-brain"></i> Google Gemini</div>
+          <div class="tech-item"><i class="fa-solid fa-diagram-project"></i> LangChain</div>
+          <div class="tech-item"><i class="fa-solid fa-robot"></i> RAG Systems</div>
+          <div class="tech-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+          <div class="tech-item"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+          <div class="tech-item"><i class="fa-solid fa-database"></i> Vector DBs</div>
+          <div class="tech-item"><i class="fa-brands fa-react"></i> React / UI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS HIGHLIGHT BAR -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card glass-card">
+            <div class="metric-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <div class="metric-value" data-target="10000">10K+</div>
+            <div class="metric-label">Spatial 3D CV Points Validated</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div class="metric-value">20-25%</div>
+            <div class="metric-label">RAG Chatbot Accuracy Boost</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="metric-value">38%</div>
+            <div class="metric-label">Defaulters Captured in Top 20% Risk</div>
+          </div>
+          <div class="metric-card glass-card">
+            <div class="metric-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="metric-value">+27%</div>
+            <div class="metric-label">Credit Model Performance Gain</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="glass-card about-card">
+              <img src="profile_headshot.jpg" alt="Rishi Raj Profile" class="about-img">
+              <div class="about-card-footer">
+                <h3>Rishi Raj</h3>
+                <p>Generative AI Data Scientist & Full Stack GenAI Developer</p>
+                <div class="location-tag"><i class="fa-solid fa-location-dot"></i> India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-column">
+            <h3 class="about-heading">Hey there! I build AI systems that actually solve problems.</h3>
+            <p class="about-text">
+              I'm a <strong>Generative AI Data Scientist & Full-Stack Developer</strong> who loves building things that work. Whether it's training LLMs, designing smart RAG systems, or just writing clean code, I enjoy bridging the gap between heavy AI models and everyday users.
+            </p>
+            <p class="about-text">
+              I hold a <strong>B.Tech in Computer Science (AI)</strong> from Parul University and spend most of my time experimenting with new tech. Backed by my <strong>Oracle OCI GenAI Certifications</strong>, I focus on building things that don't just look cool on a resume, but actually deliver measurable business impact. Let's build something awesome together!
+            </p>
+
+            <div class="about-info-cards">
+              <div class="info-card glass-card">
+                <i class="fa-solid fa-graduation-cap info-icon"></i>
+                <div>
+                  <h4>Education</h4>
+                  <p>B.Tech CS (Specialization in AI)</p>
+                  <span>Parul University | CGPA: 6.7 (2021–2025)</span>
+                </div>
+              </div>
+
+              <div class="info-card glass-card">
+                <i class="fa-solid fa-award info-icon"></i>
+                <div>
+                  <h4>Top Certifications</h4>
+                  <p>Oracle Certified GenAI & LLM Professional</p>
+                  <span>upGrad GenAI & IBM Data Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE EXPERTISE (SKILLS) SECTION -->
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">Core <span class="gradient-text">Expertise</span></h2>
+        </div>
+
+        <!-- Skill Tabs -->
+        <div class="skills-tabs">
+          <button class="tab-btn active" data-tab="genai"><i class="fa-solid fa-brain"></i> GenAI & AI</button>
+          <button class="tab-btn" data-tab="fullstack"><i class="fa-solid fa-code"></i> Full Stack & Dev</button>
+          <button class="tab-btn" data-tab="data"><i class="fa-solid fa-chart-pie"></i> ML & Data Science</button>
+        </div>
+
+        <!-- Skill Tab Panels -->
+        <div class="tab-content active" id="genai">
+          <div class="skills-grid">
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-robot skill-icon"></i>
+              <h3>LLMs & Gemini 1.5</h3>
+              <p>Prompt engineering, model tuning, and context optimization with Google Gemini API and OpenAI models.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-diagram-project skill-icon"></i>
+              <h3>RAG & Vector Search</h3>
+              <p>Retrieval-Augmented Generation using Pinecone, ChromaDB, FAISS, and custom embedding pipelines.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-link skill-icon"></i>
+              <h3>LangChain & Frameworks</h3>
+              <p>Building complex AI chains, autonomous agents, and document loaders for multi-step reasoning.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-eye skill-icon"></i>
+              <h3>Computer Vision & 3DHT</h3>
+              <p>OpenCV gesture recognition, multi-camera 3D human pose tracking, keypoints, and spatial dataset validation.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-bolt skill-icon"></i>
+              <h3>Hugging Face Transformers</h3>
+              <p>Fine-tuning open-source models, embeddings extraction, and text classification tasks.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-microphone-lines skill-icon"></i>
+              <h3>Voice Assistants & Audio AI</h3>
+              <p>Speech-to-text, text-to-speech synthesis, voice-activated agents, and audio RAG pipelines.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="fullstack">
+          <div class="skills-grid">
+            <div class="skill-card glass-card">
+              <i class="fa-brands fa-python skill-icon"></i>
+              <h3>Python</h3>
+              <p>Core backend logic, API integration, data manipulation, and fast algorithm prototyping.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-brands fa-node-js skill-icon"></i>
+              <h3>Node.js & REST APIs</h3>
+              <p>Asynchronous server microservices, backend routing, and scalable API endpoint construction.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-laptop-code skill-icon"></i>
+              <h3>Streamlit & Web UI</h3>
+              <p>Building interactive AI dashboards, web applications, and live demonstration prototypes.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-brands fa-js skill-icon"></i>
+              <h3>JavaScript / HTML5 / CSS3</h3>
+              <p>Modern responsive frontends, interactive UI design, CSS glassmorphism, and DOM manipulation.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-gears skill-icon"></i>
+              <h3>Power Automate & Enterprise</h3>
+              <p>Automating SharePoint/Teams Excel workflows, scheduled data refreshes, and enterprise task processing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="data">
+          <div class="skills-grid">
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-calculator skill-icon"></i>
+              <h3>Machine Learning & Scikit-Learn</h3>
+              <p>Predictive modeling, Logistic Regression, decision trees, feature selection, and evaluation (AUC/Gini).</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-network-wired skill-icon"></i>
+              <h3>Deep Learning (TensorFlow/PyTorch)</h3>
+              <p>Neural network architectures, computer vision pipelines, and deep feature representation learning.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h3>SQL & MySQL</h3>
+              <p>Complex relational queries, database schema design, and natural language to SQL translation.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-chart-column skill-icon"></i>
+              <h3>Pandas, NumPy & Visualization</h3>
+              <p>Data cleaning, exploratory data analysis (EDA), Matplotlib, Seaborn, and statistical inference.</p>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="fa-solid fa-square-poll-vertical skill-icon"></i>
+              <h3>Power BI & Analytics</h3>
+              <p>Business intelligence dashboards, reporting analytics, and metric visualization.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Career Path</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- EXL -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="company-logo-badge">
+                  <img src="exl_logo.png" alt="EXL Logo" class="company-logo">
+                </div>
+                <div>
+                  <h3>Analyst</h3>
+                  <span class="company-name"><a href="https://www.exlservice.com/" target="_blank" rel="noopener noreferrer">EXL</a></span>
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2026 – Present</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>Intelligent Document Comparison:</strong> Developed full-stack document comparison app using <strong>HTML, CSS, JS, Node.js, Python & Google Gemini</strong>. Extracted and parsed text from PDF & DOCX files to detect modifications, additions, and deletions with AI change summaries.</li>
+                <li><strong>AI Studio (Generative AI):</strong> Architected RAG workflows using embeddings and vector databases for document-based conversational AI, information retrieval, and prompt engineering refinement.</li>
+                <li><strong>Excel Reporting Automation:</strong> Engineered an enterprise SharePoint/Teams automation solution using Python, Node.js, VBA, and Power Automate, eliminating repetitive manual reporting.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Google Gemini</span><span>RAG</span><span>Node.js</span><span>Python</span><span>Power Automate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TELUS Digital -->
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="company-logo-badge">
+                  <img src="telus_logo.png" alt="TELUS Digital Logo" class="company-logo">
+                </div>
+                <div>
+                  <h3>Data Analyst</h3>
+                  <span class="company-name"><a href="https://www.telusinternational.com/" target="_blank" rel="noopener noreferrer">TELUS Digital</a></span>
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jul 2025 – Mar 2026</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>3D Computer Vision & Human Tracking:</strong> Supported AI/ML models in Computer Vision and 3D Human Tracking (3DHT) datasets by annotating 3D keypoints, skeletal structures, and motion trajectories using multi-camera & depth sensor data.</li>
+                <li><strong>Dataset Quality Assurance:</strong> Processed and validated <strong>10K+ data points</strong> through rigorous spatial consistency checks to deliver high-quality datasets for human pose estimation models.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Computer Vision</span><span>3D Human Tracking</span><span>Data Validation</span><span>Multi-Camera Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Petpooja -->
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="company-logo-badge">
+                  <img src="petpooja_logo.png" alt="Petpooja Logo" class="company-logo">
+                </div>
+                <div>
+                  <h3>Data Scientist</h3>
+                  <span class="company-name"><a href="https://www.petpooja.com/" target="_blank" rel="noopener noreferrer">Petpooja</a></span>
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Aug 2024 – Jun 2025</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>LLM RAG System Implementation:</strong> Designed and deployed an automated customer support response system featuring an <strong>LLM-based Retrieval-Augmented Generation (RAG)</strong> pipeline using <strong>Google Gemini 1.5 and embeddings for semantic search</strong>.</li>
+                <li><strong>Chatbot & ML Pipeline Deployment:</strong> Integrated AI chatbot functionality into core app workflows through API deployment and prompt engineering.</li>
+                <li><strong>Impact:</strong> <strong>Increased chatbot response accuracy by 20–25%</strong> and <strong>reduced manual support query handling effort by ~3%</strong>.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Google Gemini 1.5</span><span>RAG</span><span>Embeddings</span><span>Prompt Engineering</span><span>Python APIs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE SECTION -->
+    <section id="projects" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio Highlights</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="genai">GenAI & LLMs</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="cv">Vision & Automation</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Text to SQL -->
+          <div class="project-card glass-card" data-category="genai">
+            <div class="project-banner">
+              <div class="project-badge">Generative AI</div>
+              <i class="fa-solid fa-database project-icon-bg"></i>
+            </div>
+            <div class="project-body">
+              <h3>End-to-End Text-to-SQL LLM Application</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> Non-technical stakeholders struggle to query relational databases without writing raw SQL.
+              </p>
+              <p class="project-solution">
+                Built an intuitive natural language to SQL translation system powered by Google Gemini, LangChain, Python, SQL, and Streamlit.
+              </p>
+              <div class="project-tech">
+                <span>Google Gemini 1.5</span><span>LangChain</span><span>Streamlit</span><span>SQLite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/chalescharli/end-to-end-text-to-SQL-LLM-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                <button class="btn btn-sm btn-link open-modal" data-project="project1">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Medical AI Assistant -->
+          <div class="project-card glass-card" data-category="genai">
+            <div class="project-banner">
+              <div class="project-badge">RAG & Speech</div>
+              <i class="fa-solid fa-user-doctor project-icon-bg"></i>
+            </div>
+            <div class="project-body">
+              <h3>Medical AI Assistant (RAG System)</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> Accessing accurate medical insights from dense clinical documentation requires rapid retrieval.
+              </p>
+              <p class="project-solution">
+                Engineered a medical Q&A assistant featuring Hugging Face embeddings, FAISS vector search, OCR document ingestion, and voice audio output.
+              </p>
+              <div class="project-tech">
+                <span>Hugging Face</span><span>FAISS</span><span>OCR</span><span>Voice AI</span><span>Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/chalescharli/medical_agent" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                <button class="btn btn-sm btn-link open-modal" data-project="project2">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Credit Risk Scorecard -->
+          <div class="project-card glass-card" data-category="ml">
+            <div class="project-banner">
+              <div class="project-badge">Machine Learning</div>
+              <i class="fa-solid fa-shield-virus project-icon-bg"></i>
+            </div>
+            <div class="project-body">
+              <h3>Application Scorecard for Credit Risk</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> Financial institutions need reliable probability of default (PD) predictions to reduce loan defaults.
+              </p>
+              <p class="project-solution">
+                Built a Logistic Regression model on credit bureau & alt data with AUC/Gini validation. Captured <strong>38% of defaulters in top 20% risk group</strong> and improved performance by <strong>27%</strong>.
+              </p>
+              <div class="project-tech">
+                <span>Scikit-Learn</span><span>Logistic Regression</span><span>AUC / Gini</span><span>Python</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-link open-modal" data-project="project3">Case Study Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Robotic Arm -->
+          <div class="project-card glass-card" data-category="cv">
+            <div class="project-banner">
+              <div class="project-badge">Computer Vision</div>
+              <i class="fa-solid fa-hand-pointer project-icon-bg"></i>
+            </div>
+            <div class="project-body">
+              <h3>AI Gesture-Controlled Robotic Arm</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> Need for touchless human-machine interaction in hazardous or sanitary environments.
+              </p>
+              <p class="project-solution">
+                Developed real-time hand gesture tracking with OpenCV and integrated visual control signals with an Arduino robotic arm system.
+              </p>
+              <div class="project-tech">
+                <span>OpenCV</span><span>Python</span><span>Arduino</span><span>Serial Comm</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-link open-modal" data-project="project4">Hardware Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY / CLIENTS SECTION -->
+    <section class="clients-section">
+      <div class="container">
+        <p class="clients-heading">Trusted by Innovative Brands & Startups</p>
+        <div class="clients-grid">
+          <div class="client-logo glass-card">
+            <span class="company-name" style="margin: 0;"><a href="https://volgapartners.com/" target="_blank" rel="noopener noreferrer">VolgaPartner</a></span>
+          </div>
+          <div class="client-logo glass-card">
+            <span class="company-name" style="margin: 0;"><a href="https://scale.com/" target="_blank" rel="noopener noreferrer">Scale AI</a></span>
+          </div>
+          <div class="client-logo glass-card" style="opacity: 0.6; font-size: 1rem; color: var(--text-muted);">
+            <i class="fa-solid fa-plus" style="margin-right: 8px;"></i> Your Company
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCE SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Client Solutions</span>
+          <h2 class="section-title">Freelance <span class="gradient-text">Services</span></h2>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>Custom RAG Chatbots & AI Assistants</h3>
+            <p>Tailored conversational AI agents trained on your private enterprise documents, knowledge bases, and custom APIs.</p>
+            <button class="btn btn-outline btn-sm quote-btn" data-service="Custom RAG Chatbot">Get Quote</button>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>End-to-End LLM App Development</h3>
+            <p>Complete full-stack GenAI web applications from backend Python/Node.js microservices to responsive frontend UIs.</p>
+            <button class="btn btn-outline btn-sm quote-btn" data-service="End-to-End LLM App">Get Quote</button>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>AI Workflow Automation</h3>
+            <p>Automate repetitive business processes using Python, Power Automate, Microsoft 365, and AI integrations.</p>
+            <button class="btn btn-outline btn-sm quote-btn" data-service="AI Workflow Automation">Get Quote</button>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>ML Models & Data Dashboards</h3>
+            <p>Predictive ML modeling, feature engineering, classification scorecards, and interactive analytics dashboards.</p>
+            <button class="btn btn-outline btn-sm quote-btn" data-service="ML Models & Dashboards">Get Quote</button>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+            <h3>GenAI API Integration</h3>
+            <p>Seamlessly integrate Google Gemini 1.5, OpenAI GPT-4, and LangChain agents into your existing software infrastructure.</p>
+            <button class="btn btn-outline btn-sm quote-btn" data-service="GenAI API Integration">Get Quote</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Credentials & Honor</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card glass-card">
+            <div class="ach-header">
+              <i class="fa-solid fa-certificate ach-icon"></i>
+              <h3>Certifications</h3>
+            </div>
+            <div class="cert-card-grid">
+              <a href="https://www.linkedin.com/in/rishiraj1131/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-brands fa-aws" style="color: #FF9900;"></i></div>
+                <span>OCI GenAI Pro</span>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/rishiraj1131/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-solid fa-database" style="color: #F80000;"></i></div>
+                <span>Oracle LLM Pro</span>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/rishiraj1131/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-solid fa-cloud" style="color: #F80000;"></i></div>
+                <span>Oracle OCR</span>
+              </a>
+
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363497655139741696/" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-solid fa-graduation-cap" style="color: #4285F4;"></i></div>
+                <span>upGrad GenAI</span>
+              </a>
+
+              <a href="http://credly.com/earner/earned/badge/368a17f5-2def-4635-b566-2698dcca137c" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-solid fa-server" style="color: #0530ad;"></i></div>
+                <span>IBM Data Sci.</span>
+              </a>
+
+              <a href="https://www.credly.com/earner/earned/badge/bb959280-8493-46b0-aee9-260165f8ed28" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-solid fa-screwdriver-wrench" style="color: #0530ad;"></i></div>
+                <span>IBM DS Tools</span>
+              </a>
+
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7251306054511185924/" target="_blank" rel="noopener noreferrer" class="cert-mini-card glass-card">
+                <div class="cert-icon-wrapper"><i class="fa-brands fa-free-code-camp" style="color: var(--text-main);"></i></div>
+                <span>fCC ML Python</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-card">
+            <div class="ach-header">
+              <i class="fa-solid fa-trophy ach-icon"></i>
+              <h3>Achievements & Hackathons</h3>
+            </div>
+            <ul class="ach-list">
+              <li><i class="fa-solid fa-award"></i> <strong>Tech Expo Achiever Winner:</strong> Recognized for innovative AI hardware/software integration.</li>
+              <li><i class="fa-solid fa-laptop-code"></i> <strong>SSIP & Gujarat State Hackathons:</strong> Active competitor and finalist in state-level AI problem solving.</li>
+              <li><i class="fa-solid fa-users"></i> <strong>GDSC Member:</strong> Active Google Developer Student Clubs contributor.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAL INTERESTS & PHOTOGRAPHY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Life Outside Code</span>
+          <h2 class="section-title">Personal <span class="gradient-text">Interests</span></h2>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card glass-card">
+            <i class="fa-solid fa-gamepad interest-icon"></i>
+            <h3>PC Gaming</h3>
+            <p>Enthusiast of immersive RPGs, tactical strategy games, and high-performance PC setups.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <i class="fa-solid fa-plane-departure interest-icon"></i>
+            <h3>Travelling & Outdoors</h3>
+            <p>Exploring scenic destinations, mountain trails, and diverse cultural landscapes.</p>
+          </div>
+          <div class="interest-card glass-card">
+            <i class="fa-solid fa-dumbbell interest-icon"></i>
+            <h3>Calisthenics</h3>
+            <p>Dedicated bodyweight training, physical conditioning, and functional movement discipline.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS PLACEHOLDER SECTION -->
+    <section class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Client Feedback</span>
+          <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Rishi delivered an outstanding custom RAG chatbot solution for our document analysis workflow. His understanding of Gemini 1.5 and embeddings reduced our query resolution time dramatically!"
+            </p>
+            <div class="client-info">
+              <strong>Enterprise Client</strong>
+              <span>AI Document Processing Project</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Exceptional full-stack AI development skills. From clean frontend interfaces in Streamlit to backend Python microservices, Rishi's execution was prompt and production-grade."
+            </p>
+            <div class="client-info">
+              <strong>Tech Startup Founder</strong>
+              <span>Text-to-SQL Web App</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-column glass-card">
+            <h3>Contact Information</h3>
+            <p>Whether you're hiring for a <strong>Generative AI / Data Science role</strong> or need a <strong>custom AI solution built</strong>, feel free to reach out!</p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:Rishiraj1131@gmail.com">Rishiraj1131@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <strong>Phone / WhatsApp</strong>
+                  <a href="tel:+917779839102">+91 77798 39102</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/chalescharli" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/rishiraj1131/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="mailto:Rishiraj1131@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-column glass-card">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="john@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Project Type / Inquiry</label>
+                <input type="text" id="subject" required placeholder="e.g. GenAI Developer Hiring / Custom Chatbot Quote">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required placeholder="Describe your project requirements or job opportunity..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 <strong>Rishi Raj</strong>. All rights reserved.</p>
+      <p class="footer-subtext">Built with <i class="fa-solid fa-heart gradient-text"></i> for Generative AI & Innovation.</p>
+    </div>
+  </footer>
+
+  <!-- GET QUOTE SERVICE MODAL -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="closeQuoteModal">&times;</button>
+      <h3 class="modal-title">Request Quote: <span id="selectedServiceTitle" class="gradient-text">Service</span></h3>
+      <form id="quoteForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" required placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" required placeholder="email@company.com">
+        </div>
+        <div class="form-group">
+          <label>Budget / Timeline Estimate</label>
+          <input type="text" placeholder="e.g. $1,000–$3,000 / 2 Weeks">
+        </div>
+        <div class="form-group">
+          <label>Project Scope Details</label>
+          <textarea rows="4" required placeholder="Briefly describe your requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Quote Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="closeProjectModal">&times;</button>
+      <div id="projectModalContent">
+        <!-- Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING AI ASSISTANT CHAT WIDGET -->
+  <div class="ai-chat-btn" id="aiChatToggle" title="Ask Rishi's AI Assistant">
+    <i class="fa-solid fa-robot"></i>
+    <span class="chat-badge">AI</span>
+  </div>
+
+  <div class="ai-chat-window glass-card" id="aiChatWindow">
+    <div class="ai-chat-header">
+      <div class="ai-chat-title">
+        <i class="fa-solid fa-brain gradient-text"></i>
+        <div>
+          <strong>Rishi's AI Assistant</strong>
+          <span>Powered by Gemini & RAG</span>
+        </div>
+      </div>
+      <button class="ai-chat-close" id="closeAiChat">&times;</button>
+    </div>
+
+    <div class="ai-chat-messages" id="aiChatMessages">
+      <div class="chat-msg bot-msg">
+        👋 Hi! I'm Rishi's AI Assistant. Ask me anything about Rishi's experience in GenAI, RAG, LLMs, Computer Vision, or how to hire him!
+      </div>
+    </div>
+
+    <div class="ai-chat-quick-prompts">
+      <button class="prompt-chip" data-prompt="What are Rishi's core skills?">Core Skills</button>
+      <button class="prompt-chip" data-prompt="Tell me about his RAG experience">RAG Experience</button>
+      <button class="prompt-chip" data-prompt="How can I hire Rishi?">Hire Rishi</button>
+    </div>
+
+    <form class="ai-chat-input-area" id="aiChatForm">
+      <input type="text" id="aiChatInput" placeholder="Ask Rishi's AI Assistant..." required autocomplete="off">
+      <button type="submit" class="ai-chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/917779839102?text=Hi%20Rishi,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=3"></script>
+</body>
+</html>
